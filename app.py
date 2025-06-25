@@ -121,7 +121,9 @@ def invest():
         """
     )
     # input_code를 이용해서 csv파일을 로드
-    df = pd.read_csv(f"/Users/SAMSUNG/Documents/GitHub/mysite/csv/{input_code}.csv")
+    # /home/hanksw22/mysite/csv/{input_code}.csv?
+    # /Users/SAMSUNG/Documents/GitHub/mysite/csv/{input_code}.csv
+    df = pd.read_csv(f"/home/hanksw22/mysite/csv/{input_code}.csv")
     df.rename(
         columns={
             '날짜' : 'Date'
